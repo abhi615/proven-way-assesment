@@ -80,6 +80,10 @@ height: 14.46px;
   line-height: 17.5px;
 }
 
+.price-content{
+  margin-left: 38px;
+}
+
 .options {
   padding: 10px;
   border-radius: 5px;
