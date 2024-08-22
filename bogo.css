@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.title {
+  font-size: 21.8px;
+  color: #FF6472;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #FF6472;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+}
+
+.offer input[type="radio"] {
+ appearance: none;
+ border: 2px solid #FF6472;
+ border-radius: 50%;
+ margin-left: 20px;
+ width: 14.46px;
+height: 14.46px;
+}
+
+.offer input[type="radio"]:checked {
+  background-color: #FF6472;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  box-shadow: 0 0 0 1px #FF6472;
+
+  transform: translate(-50% -50%);
+}
+
+.offer.most-popular {
+  border-color: #FF6472;
+}
+
+.offer .discount {
+  background-color: #FF6472;
+  color: #fff;
+  padding: 28px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20%;
+}
+
+.offer .description {
+  text-align: left;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.offer .price {
+  font-weight: 600;
+  color: #333;
+  font-size: 14.46px;
+  line-height: 17.5px;
+}
+
+.options {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #FF6472;
+  margin-bottom: 20px;
+  background-color: #fff8f8;
+  text-align: left;
+  margin-top: 35px;
+}
+
+.options .discount {
+  background-color: #FF6472;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  float: right;
+  margin-left: 7px;
+}
+
+.options select {
+  width: 66px;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.label-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 9.9px;
+  line-height: 12px;
+  font-weight: 400;
+}
+.label-size{
+  margin-left: 45px;
+}
+.label-color{
+  margin-right: 75px;
+}
+
+.footer {
+  font-size: 12px;
+  color: #FF6472;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  background-color: #FF6472;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.powered-by {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the default radio button */
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+/* Style the container */
+.radio-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.outer-circle {
+  display: inline-block;
+  width: 14.6px;
+  height: 14.6px;
+  background-color: white;
+  border: 2px solid #FF6472;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 8px;
+}
+
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 9px;
+  background-color: #FF6472;
+  border-radius: 50%;
+  opacity: 0; /* Initially hidden */
+}
+
+
+.radio-container input[type="radio"]:checked + .outer-circle .inner-circle {
+  opacity: 1;
+}
+
+.option-container{
+  display: flex;
+  justify-content: space-around;
+  font-size: 9px;
+  line-height: 7px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: baseline;
+}
+
+.footer-price{
+  color: black;
+  font-size: 14px;
+  line-height: 16.9px;
+}
+.powered-by-text{
+  color: #FF6472;
+  font-weight: 700;
+  margin-left: 3px;
+  
+}
